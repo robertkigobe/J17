@@ -12,11 +12,11 @@ private String make;
     private int doors;
     private boolean convertible;
 
-    public void describeCar {
-        System.out.println(doors + "-Door " +
-                color + " "+
-                make + " "+
-                model+ " "+
-                (convertible ? "Convertible": ""));
-    }
+//    public void describeCar {
+//        System.out.println(doors + "-Door " +
+//                color + " "+
+//                make + " "+
+//                model+ " "+
+//                (convertible ? "Convertible": ""));
+//    }
 }
