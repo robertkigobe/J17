@@ -1,69 +1,73 @@
 package oopConcepts.objectMethods;
+
+import java.lang.constant.ConstantDesc;
+import java.util.Arrays;
+
 //https://howtodoinjava.com/java15/sealed-classes-interfaces/
 //tested in java 15 and implemented in java 17
 public class MainSealedClass {
 
-    public static void main(String args[])
-    {
-//creating an instance of GrandFather class
-        Person grandfather = new GrandFather(87, "Albert");
+    public static void main(String args[]) {
+        //creating an instance of GrandFather class
+        Person grandfather = new GrandFather(87, "GrandPa Albert");
         grandfather.name = "Albert";
-        System.out.println("The age of grandfather is: "+getAge(grandfather));
+        System.out.println("The age of grandfather is: " + getAge(grandfather));
+
+        System.out.println();
+        Arrays.stream(Person.class.getPermittedSubclasses()).forEach(System.out::println);
+
     }
+
     // getting the age of the Person
-    public static int getAge(Person person)
-    {
-//if the person is an instance of the Father class, returns the age of the father
-        if (person instanceof Father)
-        {
-//cast the person class to Father class and get the age
+    public static int getAge(Person person) {
+        if (person instanceof Father) {
             return ((Father) person).getFatherAge();
-        }
-//if the person is an instance of the GrandFather class, returns grandfather age
-        else if (person instanceof GrandFather)
-        {
+        } else if (person instanceof GrandFather) {
             return ((GrandFather) person).getGrandFatherAge();
         }
-//returns nothing if does not match with any of the above conditions
         return -1;
     }
+
+
+
 }
+
 //the class person extends only Father and GrandFather class
-abstract sealed class Person permits Father, GrandFather
-{
+abstract sealed class Person permits Father, GrandFather {
+
     String name;
-    String getName()
-    {
+
+    String getName() {
         return name;
     }
 }
 
-final class Father extends Person
-{
-    String name;
+final class Father extends Person {
+    //String name;
     int age;
+
     //constructor of the Father class
-    Father(int age, String name)
-    {
+    Father(int age, String name) {
         this.age = age;
         this.name = name;
     }
-    int getFatherAge()
-    {
+
+    int getFatherAge() {
         return age;
     }
 }
+
+
 //non-sealed class extends unknown subclass (Person)
-non-sealed class GrandFather extends Person
-{
+non-sealed class GrandFather extends Person {
     int age;
-    GrandFather(int age, String name)
-    {
+
+    GrandFather(int age, String name) {
         this.age = age;
         this.name = name;
     }
-    int getGrandFatherAge()
-    {
+
+    int getGrandFatherAge() {
         return age;
     }
 }
