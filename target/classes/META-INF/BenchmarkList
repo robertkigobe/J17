@@ -1,0 +1,7 @@
+JMH S 27 JavaBenchmark.BenchmarkDemo S 64 JavaBenchmark.jmh_generated.BenchmarkDemo_testTheMethod2_jmhTest S 14 testTheMethod2 S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 27 JavaBenchmark.BenchmarkDemo S 64 JavaBenchmark.jmh_generated.BenchmarkDemo_testTheMethod3_jmhTest S 14 testTheMethod3 S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 JavaBenchmark.BenchmarkDemo S 64 JavaBenchmark.jmh_generated.BenchmarkDemo_testTheMethod0_jmhTest S 14 testTheMethod0 S 3 All E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 JavaBenchmark.BenchmarkDemo S 64 JavaBenchmark.jmh_generated.BenchmarkDemo_testTheMethod1_jmhTest S 14 testTheMethod1 S 3 All E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 JavaBenchmark.BenchmarkDemo S 64 JavaBenchmark.jmh_generated.BenchmarkDemo_testTheMethod4_jmhTest S 14 testTheMethod4 S 3 All E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 JavaBenchmark.BenchmarkDemo S 64 JavaBenchmark.jmh_generated.BenchmarkDemo_testTheMethod5_jmhTest S 14 testTheMethod5 S 3 All E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 27 JavaBenchmark.BenchmarkDemo S 64 JavaBenchmark.jmh_generated.BenchmarkDemo_testTheMethod6_jmhTest S 14 testTheMethod6 S 3 All E A 1 1 1 E E E E E E E E E E E E E M 1 1 m 3 8 xAAMAADA 16 xAAMAADAwAA===== 16 xAAMAADAwAAMAA== U 11 NANOSECONDS E E 

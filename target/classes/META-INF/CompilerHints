@@ -1,0 +1,13 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+exclude,JavaBenchmark/BenchmarkDemo$SomeClass.anotherMethod
+inline,JavaBenchmark/BenchmarkDemo.testTheMethod0
+inline,JavaBenchmark/BenchmarkDemo.testTheMethod1
+inline,JavaBenchmark/BenchmarkDemo.testTheMethod2
+inline,JavaBenchmark/BenchmarkDemo.testTheMethod3
+inline,JavaBenchmark/BenchmarkDemo.testTheMethod4
+inline,JavaBenchmark/BenchmarkDemo.testTheMethod5
+inline,JavaBenchmark/BenchmarkDemo.testTheMethod6
